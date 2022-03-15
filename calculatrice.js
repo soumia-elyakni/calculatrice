@@ -28,8 +28,11 @@ if(listeKeycode.includes(valeur)){
           const indexKeycode = listeKeycode.indexOf(valeur);
           const btn = btns[indexKeycode];
           output.textContent += btn.innerHTML;
-
+           
     }
 }
 }
+ window.addEventListener('error', (e) => {
+     output.textContent = "NaN"
+ })
 
